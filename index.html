@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Sudoku</title>
+</head>
+<body>
+    <br>
+    <h1>Sudoku</h1>
+    <br>
+    <h3 id="finalMessage" style="display: none;">
+    </h3>
+    <br>
+    <div id="startButton" class="col text-center" style="display: block">
+        <button id="startGame" class="btn-lg btn-success" onclick="startGame()">Start Game!</button>
+    </div>
+    <div id="resetButton" class="col text-center" style="display: none">
+        <button id="restartGame" class="btn-lg btn-danger" onclick="restartGame()">Restart Game!</button>
+    </div>
+    <br><br><br>
+    <div class="container" id="box"></div>
+    <br><br><br><br>
+    <div id="numbers" class="container" >
+    </div>
+    <h4 id="attempts" style="display: none">Remaining Attempts: <span id = "attemptsLeft"> 5 </span></h4>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
