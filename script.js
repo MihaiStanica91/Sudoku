@@ -33,7 +33,7 @@ function createTable() {
             cell.style.height = "30px";
             cell.id = i.toString() + "." + j.toString();
             cell.addEventListener ("click", function() {
-                clickedCell(this.id, i, j);
+                updateCell(this.id, i, j);
             });
             //it will bold the borders of the 9 x 9 squares to make them more visible
             if (i == 2 || i == 5) {
@@ -153,7 +153,7 @@ function numberButtons() {
 
 //it marks the cell that is chosen by a player to place the number that he thinks is correct
 
-function clickedCell(id, row, col) {
+function updateCell(id, row, col) {
     let cell = document.getElementById(id);
     if (cell.innerHTML == "?") {
         if (clicked == 0) {
